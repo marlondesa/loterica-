@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import AdBanner from '../components/AdBanner';
 
 const LotteryHome = () => {
   const [results, setResults] = useState({});
@@ -110,6 +111,9 @@ const LotteryHome = () => {
         </div>
       </div>
 
+      {/* Anúncio Superior - Horizontal */}
+      <AdBanner position="top" type="horizontal" />
+
       {/* Resultados Principais */}
       <div className="main-results">
         <div className="container">
@@ -181,6 +185,9 @@ const LotteryHome = () => {
         </div>
       </div>
 
+      {/* Anúncio Quadrado */}
+      <AdBanner position="square" type="square" />
+
       {/* Botão Histórico */}
       <div className="history-section">
         <div className="container">
@@ -229,6 +236,9 @@ const LotteryHome = () => {
         </div>
       )}
 
+      {/* Anúncio Meio da Página - Horizontal */}
+      <AdBanner position="inline" type="horizontal" />
+
       {/* Todas as Modalidades */}
       <div className="all-lotteries">
         <div className="container">
@@ -254,6 +264,9 @@ const LotteryHome = () => {
           </div>
         </div>
       </div>
+
+      {/* Anúncio Quadrado */}
+      <AdBanner position="square" type="square" />
 
       {/* Informações Úteis */}
       <div className="info-section">
@@ -282,6 +295,9 @@ const LotteryHome = () => {
           </div>
         </div>
       </div>
+
+      {/* Anúncio Inferior - Vertical */}
+      <AdBanner position="bottom" type="vertical" />
     </div>
   );
 };

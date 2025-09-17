@@ -121,8 +121,8 @@ const LotteryResults = () => {
           </div>
         </div>
 
-        {/* Anúncio Inline */}
-        <AdBanner position="inline" />
+        {/* Anúncio Inline - Horizontal */}
+        <AdBanner position="inline" type="horizontal" />
         
         {/* Resultado Mais Recente */}
         {result && (
@@ -161,8 +161,11 @@ const LotteryResults = () => {
           </div>
         )}
 
-        {/* Anúncio Entre Seções */}
-        <AdBanner position="sidebar" />
+        {/* Anúncio Entre Seções - Vertical */}
+        <AdBanner position="sidebar" type="vertical" />
+        
+        {/* Anúncio Quadrado */}
+        <AdBanner position="square" type="square" />
         
         {/* Histórico */}
         {history.length > 0 && (
