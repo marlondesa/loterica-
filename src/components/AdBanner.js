@@ -81,7 +81,7 @@ const AdBanner = ({ position, slot, format = 'auto' }) => {
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
-        data-ad-client="ca-pub-XXXXXXXXXX" // Substitua pelo seu código
+        data-ad-client="ca-pub-6389444704025042"
         data-ad-slot={slot}
         data-ad-format={format}
         data-full-width-responsive="true"
