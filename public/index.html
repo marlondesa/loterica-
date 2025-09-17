@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/img/logocaixa.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#003d82" />
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Resultados oficiais das Loterias CAIXA em tempo real. Mega-Sena, Lotofácil, Quina e todas as modalidades. Confira os números sorteados e próximos prêmios." />
+  <meta name="keywords" content="loterias caixa, mega sena, lotofacil, quina, resultados loteria, numeros sorteados, premios loteria, lotomania, timemania, dupla sena, federal, dia de sorte, super sete, mais milionaria" />
+  <meta name="author" content="Loterias CAIXA - Resultados Oficiais" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://loteriascaixa-resultados.com.br/" />
+  <meta property="og:title" content="Loterias CAIXA - Resultados Oficiais em Tempo Real" />
+  <meta property="og:description" content="Confira os resultados das Loterias CAIXA atualizados em tempo real. Mega-Sena, Lotofácil, Quina e todas as modalidades." />
+  <meta property="og:image" content="%PUBLIC_URL%/img/banner.jpg" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://loteriascaixa-resultados.com.br/" />
+  <meta property="twitter:title" content="Loterias CAIXA - Resultados Oficiais" />
+  <meta property="twitter:description" content="Resultados das Loterias CAIXA em tempo real. Todos os números sorteados e próximos prêmios." />
+  <meta property="twitter:image" content="%PUBLIC_URL%/img/banner.jpg" />
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Loterias CAIXA - Resultados Oficiais",
+    "description": "Resultados oficiais das Loterias CAIXA em tempo real",
+    "url": "https://loteriascaixa-resultados.com.br",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://loteriascaixa-resultados.com.br/loteria/{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  
+  <title>Loterias CAIXA - Resultados Oficiais em Tempo Real | Mega-Sena, Lotofácil, Quina</title>
+  
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://loteriascaixa-api.herokuapp.com">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://loteriascaixa-resultados.com.br/" />
+</head>
+<body>
+  <noscript>
+    <div style="text-align: center; padding: 2rem; background: #003d82; color: white;">
+      <h1>Loterias CAIXA - Resultados Oficiais</h1>
+      <p>Este site requer JavaScript para funcionar corretamente.</p>
+      <p>Para ver os resultados das loterias, habilite JavaScript no seu navegador.</p>
+    </div>
+  </noscript>
+  
+  <div id="root"></div>
+  
+  <!-- Cookie Consent (LGPD) -->
+  <script>
+    if (!localStorage.getItem('cookieConsent')) {
+      setTimeout(() => {
+        const consent = confirm('Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa Política de Cookies. Deseja continuar?');
+        if (consent) {
+          localStorage.setItem('cookieConsent', 'accepted');
+        }
+      }, 2000);
+    }
+  </script>
+</body>
+</html>

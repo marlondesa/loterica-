@@ -1,0 +1,306 @@
+/* Lottery Results Styles */
+.lottery-results {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  padding: 2rem 0;
+}
+
+.lottery-results .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header da Loteria */
+.lottery-header {
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lottery-icon {
+  font-size: 3rem;
+}
+
+.lottery-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.lottery-header p {
+  margin: 0.5rem 0 0 0;
+  opacity: 0.9;
+}
+
+/* Resultado Mais Recente */
+.latest-result {
+  margin-bottom: 3rem;
+}
+
+.latest-result h2 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.result-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px var(--shadow);
+  border: 3px solid;
+}
+
+.result-header {
+  margin-bottom: 2rem;
+}
+
+.contest-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contest-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.contest-date {
+  color: var(--text-secondary);
+}
+
+/* Números */
+.numbers-section {
+  margin-bottom: 2rem;
+}
+
+.numbers-section h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.number-ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Prêmio */
+.prize-section {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+}
+
+.prize-label {
+  display: block;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.prize-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+/* Histórico */
+.history-section {
+  margin-bottom: 3rem;
+}
+
+.history-section h2 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.history-item {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px var(--shadow);
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.history-contest {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.history-date {
+  color: var(--text-secondary);
+}
+
+.history-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.history-ball {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Informações da Loteria */
+.lottery-info {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px var(--shadow);
+}
+
+.lottery-info h2 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.info-content p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.important-note {
+  background: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #ff6600;
+}
+
+.important-note h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.important-note ul {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.important-note li {
+  margin-bottom: 0.5rem;
+}
+
+/* Estados de Loading e Error */
+.loading, .error {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.loading {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+.error {
+  color: var(--text-primary);
+}
+
+.error h1 {
+  color: #ff6600;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .lottery-results .container {
+    padding: 0 1rem;
+  }
+  
+  .lottery-header {
+    padding: 1.5rem;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .lottery-header h1 {
+    font-size: 2rem;
+  }
+  
+  .result-card {
+    padding: 1.5rem;
+  }
+  
+  .contest-info {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .numbers {
+    gap: 0.5rem;
+  }
+  
+  .number-ball {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .history-header {
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: center;
+  }
+  
+  .history-ball {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+}
