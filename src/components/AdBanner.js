@@ -70,44 +70,9 @@ const AdBanner = ({ position, slot, format = 'auto' }) => {
     boxSizing: 'border-box'
   };
 
-  // Se não tem slot configurado, mostra placeholder
+  // Se não tem slot configurado, não mostra nada
   if (!slot) {
-    return (
-      <div style={placeholderStyle}>
-        <div style={{ 
-          textAlign: 'center', 
-          padding: position === 'top' ? '10px' : '20px',
-          width: '100%',
-          boxSizing: 'border-box'
-        }}>
-          <div style={{ fontSize: '2rem', marginBottom: '10px' }}>📢</div>
-          <p style={{ margin: '5px 0', fontWeight: 'bold' }}>
-            Espaço para Google AdSense
-          </p>
-          <small style={{ 
-            opacity: 0.7,
-            display: 'block',
-            marginTop: '5px',
-            fontSize: position === 'top' ? '0.75rem' : '0.8rem'
-          }}>
-            {position === 'top' && 'Banner Superior'}
-            {position === 'bottom' && 'Banner Inferior'}
-            {position === 'sidebar' && 'Sidebar'}
-            {position === 'inline' && 'Anúncio Inline'}
-          </small>
-          <div style={{ 
-            marginTop: '10px', 
-            fontSize: '0.8rem', 
-            opacity: 0.6,
-            wordWrap: 'break-word',
-            maxWidth: '100%',
-            textAlign: 'center'
-          }}>
-            Configure o slot no AdBanner.js
-          </div>
-        </div>
-      </div>
-    );
+    return null;
   }
 
   // Anúncio real do AdSense
